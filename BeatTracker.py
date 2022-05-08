@@ -748,6 +748,8 @@ def cutStartPLP(path, cutTime=1.0, **kwargs):
     return preds
 
 
+# === Main Function === #
+
 # get predicted beat and downbeat times
 def beatTracker(inputFile):
     beats = getPLP(inputFile, sr=22050, bands = 10, 
